@@ -1,11 +1,11 @@
-/* ===== 1. Base ===== */
+/* Base */
 * {
-    box-sizing: border-box; /* padding inclus dans la largeur */
+    box-sizing: border-box; 
 }
 
 body {
     margin: 0;
-    padding: 0 16px;        /* marge sur les côtés (téléphone) */
+    padding: 0 16px;        
     background: #f6f8fc;
     color: #18243a;
     font-family: "Segoe UI", Arial, sans-serif;
@@ -16,15 +16,15 @@ body {
 header,
 main,
 footer {
-    max-width: 1000px;      /* largeur maximale du contenu */
-    margin: 0 auto;         /* centré sur grand écran */
+    max-width: 1000px;      
+    margin: 0 auto;         
 }
 
 a {
     color: #2f5d9e;
 }
 
-/* ===== 2. En-tête ===== */
+/* En-tête */
 header {
     padding: 48px 0 32px;
 }
@@ -45,7 +45,7 @@ h1 span {
     color: #5a6780;
 }
 
-/* Menu : liens en ligne avec un espace entre eux */
+
 .menu {
     display: flex;
     gap: 10px;
@@ -64,10 +64,10 @@ h1 span {
     color: #ffffff;
 }
 
-/* ===== 3. Section projets ===== */
+/* Section projets */
 #projets {
     display: grid;
-    grid-template-columns: 1fr; /* téléphone : 1 colonne */
+    grid-template-columns: 1fr;
     gap: 24px;
     padding-bottom: 48px;
 }
@@ -77,7 +77,7 @@ h2 {
     font-size: 1.6rem;
 }
 
-/* ===== 4. Carte projet ===== */
+/* Carte projet */
 .projet {
     background: #ffffff;
     border: 1px solid #dbe3f0;
@@ -87,7 +87,7 @@ h2 {
 
 /* Capture d'écran du site */
 .projet img {
-    width: 100%;            /* prend toute la largeur de la carte */
+    width: 100%;           
     display: block;
     border: 1px solid #dbe3f0;
     border-radius: 8px;
@@ -146,7 +146,7 @@ h2 {
     background: #1f4478;
 }
 
-/* ===== 5. Contact ===== */
+/* Contact */
 #contact {
     background: #ffffff;
     border: 1px solid #dbe3f0;
@@ -163,7 +163,7 @@ h2 {
     margin: 6px 0;
 }
 
-/* ===== 6. Pied de page ===== */
+/* Pied de page */
 footer {
     text-align: center;
     color: #5a6780;
@@ -171,7 +171,7 @@ footer {
     padding-bottom: 32px;
 }
 
-/* ===== 7. Ordinateur : à partir de 800px de large ===== */
+/* Ordinateur : à partir de 800px de large */
 @media (min-width: 800px) {
     body {
         font-size: 17px;
@@ -186,12 +186,12 @@ footer {
     }
 
     #projets {
-        grid-template-columns: 1fr 1fr; /* 2 colonnes */
+        grid-template-columns: 1fr 1fr; 
         align-items: start;
     }
 
     h2 {
-        grid-column: 1 / -1;            /* le titre prend toute la largeur */
+        grid-column: 1 / -1;          
     }
 
     .projet {
