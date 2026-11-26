@@ -1,73 +1,68 @@
-/* ================================================
-   Site CV · Alina Kralechkina
-   Один файл стилей для всех трёх страниц
-   ================================================ */
 
-/* ----- 1. Основа ----- */
 
-/* padding и border считаются внутри ширины блока */
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;                      /* убираем отступ браузера */
-    background: #f6f8fc;            /* светлый серо-голубой фон */
-    color: #18243a;                 /* тёмно-синий текст */
-    font-family: Arial, sans-serif; /* простой шрифт без засечек */
+    margin: 0;                      
+    background: #f6f8fc;            
+    color: #18243a;                 
+    font-family: Arial, sans-serif;
     font-size: 16px;
-    line-height: 1.6;               /* расстояние между строками */
+    line-height: 1.6;
 }
 
-/* Ссылки синие */
+
 a {
     color: #2f5d9e;
 }
 
-/* ----- 2. Шапка с меню ----- */
+
 
 .entete {
     background: #ffffff;
-    border-bottom: 1px solid #dbe3f0;  /* тонкая линия снизу */
+    border-bottom: 1px solid #dbe3f0;
     padding: 16px;
-    display: flex;                     /* логотип и меню в одну строку */
-    flex-wrap: wrap;                   /* если не помещается — переносим */
-    justify-content: space-between;    /* логотип слева, меню справа */
-    align-items: center;               /* выравнивание по центру по высоте */
-    gap: 12px;                         /* расстояние между ними */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
 }
 
 .logo {
     font-weight: bold;
     font-size: 18px;
     color: #18243a;
-    text-decoration: none;             /* убираем подчёркивание */
+    text-decoration: none;
 }
 
 .menu {
-    display: flex;                     /* пункты меню в строку */
+    display: flex;
     gap: 6px;
 }
 
 .menu a {
     text-decoration: none;
-    color: #5a6780;                    /* серые пункты */
+    color: #5a6780;
     padding: 6px 12px;
-    border-radius: 20px;               /* скруглённые "таблетки" */
+    border-radius: 20px;
 }
 
-/* Пункт текущей страницы: синий фон */
+
 .menu a.actif {
     background: #2f5d9e;
     color: #ffffff;
 }
 
-/* ----- 3. Основное содержимое ----- */
+
 
 .contenu {
-    max-width: 800px;                  /* не шире 800px на большом экране */
-    margin: 0 auto;                    /* по центру */
-    padding: 32px 16px;                /* 16px — отступ от краёв телефона */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 32px 16px;
 }
 
 h1 {
@@ -87,22 +82,20 @@ h3 {
     margin: 0;
 }
 
-/* Белая карточка-раздел */
+
 .bloc {
     background: #ffffff;
     border: 1px solid #dbe3f0;
     border-radius: 12px;
     padding: 20px;
-    margin-bottom: 20px;               /* отступ до следующего блока */
+    margin-bottom: 20px;
 }
 
 .bloc p {
     margin: 0 0 10px;
 }
 
-/* ----- 4. Главная страница ----- */
 
-/* Блок с инициалами и именем */
 .intro {
     display: flex;
     align-items: center;
@@ -110,19 +103,19 @@ h3 {
     margin-bottom: 28px;
 }
 
-/* Круг с буквами AK */
+
 .initiales {
     width: 90px;
     height: 90px;
-    border-radius: 50%;                /* 50% = идеальный круг */
+    border-radius: 50%;
     background: #2f5d9e;
     color: #ffffff;
     font-size: 32px;
     font-weight: bold;
-    display: flex;                     /* чтобы поставить буквы в центр */
-    justify-content: center;           /* по горизонтали */
-    align-items: center;               /* по вертикали */
-    flex-shrink: 0;                    /* круг не сжимается на телефоне */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 .intro h1 {
@@ -146,9 +139,9 @@ h3 {
     padding-left: 20px;
 }
 
-/* Кнопка "Voir mon parcours" */
+
 .bouton {
-    display: inline-block;             /* ссылка ведёт себя как кнопка */
+    display: inline-block;
     background: #2f5d9e;
     color: #ffffff;
     text-decoration: none;
@@ -156,17 +149,15 @@ h3 {
     border-radius: 24px;
 }
 
-/* При наведении мыши кнопка темнеет */
+
 .bouton:hover {
     background: #1f4478;
 }
 
-/* ----- 5. Страница "Parcours" ----- */
 
-/* Одна запись: даты + описание */
 .etape {
     padding: 14px 0;
-    border-top: 1px dashed #dbe3f0;    /* пунктир между записями */
+    border-top: 1px dashed #dbe3f0;
 }
 
 .etape .dates {
@@ -181,11 +172,10 @@ h3 {
     padding-left: 20px;
 }
 
-/* ----- 6. Страница "Compétences" ----- */
 
 .grille {
     display: grid;
-    grid-template-columns: 1fr;        /* телефон: 1 колонка */
+    grid-template-columns: 1fr;
     gap: 20px;
     margin-bottom: 28px;
 }
@@ -201,18 +191,16 @@ h3 {
     margin: 0;
 }
 
-/* Навык в виде "таблетки" */
 .pastille {
     display: inline-block;
-    background: #e6eef9;               /* светло-голубой фон */
+    background: #e6eef9;
     color: #2f5d9e;
     padding: 4px 12px;
     border-radius: 20px;
-    margin: 0 6px 8px 0;               /* отступ справа и снизу */
+    margin: 0 6px 8px 0;
     font-size: 15px;
 }
 
-/* ----- 7. Подвал ----- */
 
 .pied {
     text-align: center;
@@ -221,11 +209,10 @@ h3 {
     padding: 20px 16px 32px;
 }
 
-/* ----- 8. Компьютер: экран от 700px ----- */
 @media (min-width: 700px) {
 
     .entete {
-        padding: 18px 40px;            /* больше отступы по бокам */
+        padding: 18px 40px;
     }
 
     h1 {
@@ -238,14 +225,13 @@ h3 {
         font-size: 40px;
     }
 
-    /* Даты слева, описание справа */
     .etape {
         display: grid;
         grid-template-columns: 170px 1fr;
         gap: 20px;
     }
 
-    /* Карточки навыков в 2 колонки */
+
     .grille {
         grid-template-columns: 1fr 1fr;
     }
