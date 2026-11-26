@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Étoffe · Magazine de mode</title>
+    <!-- Шрифты Google: Bodoni Moda для заголовков (как в модных журналах), Jost для текста -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;700&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка журнала: одна и та же на всех страницах -->
+    <header class="entete">
+        <p class="date-numero">N° 12 · Hiver 2026</p>
+        <a class="logo" href="index.html">Étoffe</a>
+        <p class="slogan">Le magazine de la mode qui dure</p>
+        <nav class="menu">
+            <a class="actif" href="index.html">Accueil</a>
+            <a href="rubriques.html">Rubriques</a>
+            <a href="article.html">Article</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="contenu">
+
+        <!-- Главная статья номера: картинка + текст -->
+        <section class="une">
+            <img src="images/une.jpg" alt="Drapé de lin couleur sable">
+            <div class="une-texte">
+                <p class="rubrique">À la une · Tendances</p>
+                <h1>Le lin, la matière de l'été qui s'invite en hiver</h1>
+                <p>Longtemps réservé aux vacances, le lin revient dans les vestiaires toute l'année. Superposé, épais ou mélangé à la laine, il change de saison.</p>
+                <a class="bouton" href="article.html">Lire l'article</a>
+            </div>
+        </section>
+
+        <!-- Сетка последних статей: 1 колонка на телефоне, 4 на компьютере -->
+        <section>
+            <h2 class="titre-section">Derniers articles</h2>
+
+            <div class="grille">
+
+                <article class="carte">
+                    <img src="images/tendances.jpg" alt="Tissu beige plissé">
+                    <p class="rubrique">Tendances</p>
+                    <h3><a href="article.html">Les couleurs sable reviennent cet hiver</a></h3>
+                    <p>Beige, camel, écru : la palette douce s'impose dans les collections.</p>
+                </article>
+
+                <article class="carte">
+                    <img src="images/createurs.jpg" alt="Tissu bleu nuit plissé">
+                    <p class="rubrique">Créateurs</p>
+                    <h3><a href="article.html">Trois jeunes ateliers parisiens à suivre</a></h3>
+                    <p>Petites séries, tissus de stock et pièces faites pour durer.</p>
+                </article>
+
+                <article class="carte">
+                    <img src="images/beaute.jpg" alt="Tissu rose poudré">
+                    <p class="rubrique">Beauté</p>
+                    <h3><a href="article.html">La routine simple en cinq gestes</a></h3>
+                    <p>Moins de produits, mieux choisis : le guide pour l'hiver.</p>
+                </article>
+
+                <article class="carte">
+                    <img src="images/street.jpg" alt="Tissu vert sauge">
+                    <p class="rubrique">Street style</p>
+                    <h3><a href="article.html">Dans les rues du Marais en novembre</a></h3>
+                    <p>Manteaux longs, baskets et superpositions vus à Paris.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Цитата номера на тёмном фоне -->
+        <section class="citation">
+            <p>« La mode se démode, le style jamais. »</p>
+            <p class="auteur">Coco Chanel</p>
+        </section>
+
+    </main>
+
+    <!-- Подвал: тоже одинаковый на всех страницах -->
+    <footer class="pied">
+        <p class="logo-pied">Étoffe</p>
+        <p>Magazine fictif réalisé dans le cadre d'un projet étudiant au Cnam · 2026</p>
+    </footer>
+
+</body>
+</html>

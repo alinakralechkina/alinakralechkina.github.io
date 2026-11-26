@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact · Étoffe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;700&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="entete">
+        <p class="date-numero">N° 12 · Hiver 2026</p>
+        <a class="logo" href="index.html">Étoffe</a>
+        <p class="slogan">Le magazine de la mode qui dure</p>
+        <nav class="menu">
+            <a href="index.html">Accueil</a>
+            <a href="rubriques.html">Rubriques</a>
+            <a href="article.html">Article</a>
+            <a class="actif" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="contenu lecture">
+
+        <h1 class="titre-page">Écrire à la rédaction</h1>
+        <p class="intro-page">Une idée d'article, une question ou un atelier à nous faire découvrir ? Laissez-nous un message.</p>
+
+        <!-- Форма. Каждое поле: label (подпись) + input. for="..." связывает подпись с полем по id -->
+        <form class="formulaire" action="#">
+
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="vous@exemple.fr" required>
+
+            <!-- select = выпадающий список -->
+            <label for="sujet">Sujet</label>
+            <select id="sujet" name="sujet">
+                <option>Proposer un sujet</option>
+                <option>Présenter un créateur</option>
+                <option>Autre question</option>
+            </select>
+
+            <!-- textarea = большое поле для текста -->
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Votre message" required></textarea>
+
+            <!-- Галочка подписки -->
+            <p class="case">
+                <input type="checkbox" id="lettre" name="lettre">
+                <label for="lettre">Je souhaite recevoir la lettre d'information</label>
+            </p>
+
+            <button class="bouton" type="submit">Envoyer</button>
+        </form>
+
+    </main>
+
+    <footer class="pied">
+        <p class="logo-pied">Étoffe</p>
+        <p>Magazine fictif réalisé dans le cadre d'un projet étudiant au Cnam · 2026</p>
+    </footer>
+
+</body>
+</html>

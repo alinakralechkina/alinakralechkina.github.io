@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alina Kralechkina · Intégratrice web</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Alina <span>Kralechkina</span></h1>
+            <p class="sous-titre">Intégratrice web</p>
+            <!-- Меню: ссылки ведут к разделам этой же страницы по id (#projets, #contact) -->
+            <nav class="menu">
+                <a href="#projets">Projets</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="projets">
+                <h2>Projets</h2>
+
+                <article class="projet magazine">
+                    <!-- Скриншот сайта. Клик по нему тоже открывает сайт -->
+                    <a href="projets/magazine/index.html">
+                        <img src="images/magazine.jpg" alt="Page d'accueil du magazine de mode Étoffe">
+                    </a>
+                    <h3>Site de magazine de mode</h3>
+                    <p class="meta">Projet de groupe · Cnam · octobre 2026</p>
+                    <h4>Situation</h4>
+                    <p>Dans le module HTML-CSS du DSP Assistant Intégrateur web, nous devions créer en groupe le site d'un magazine de mode en ligne. C'était notre premier projet d'équipe : chaque membre codait de son côté, mais le site final devait donner l'impression d'avoir été fait par une seule personne.</p>
+                    <h4>Tâche</h4>
+                    <p>Livrer un site de 4 pages (accueil, rubriques, article, contact) avec une navigation et un style identiques sur toutes les pages, lisible sur ordinateur et sur téléphone.</p>
+                    <h4>Action</h4>
+                    <ul>
+                        <li>Définition en équipe de l'arborescence du site et répartition des pages entre les membres.</li>
+                        <li>Choix d'une structure HTML commune (en-tête, navigation, contenu, pied de page) et d'une feuille de style partagée : couleurs, polices, espacements.</li>
+                        <li>Intégration de la grille d'articles, de la page article (titre, image, citation) et du formulaire de contact.</li>
+                        <li>Adaptation au téléphone avec des media queries, puis vérification de tous les liens.</li>
+                    </ul>
+                    <h4>Résultat</h4>
+                    <p>Un site complet de 4 pages, responsive, avec la même navigation et la même charte sur toutes les pages.</p>
+                    <!-- Кнопки-ссылки на сам сайт -->
+                    <a class="lien-projet" href="projets/magazine/index.html">Voir le site →</a>
+                </article>
+
+                <article class="projet cv">
+                    <a href="projets/site-cv/index.html">
+                        <img src="images/site-cv.jpg" alt="Page d'accueil du site CV d'Alina Kralechkina">
+                    </a>
+                    <h3>Site CV en ligne</h3>
+                    <p class="meta">Projet individuel · Cnam · octobre 2026</p>
+                    <h4>Situation</h4>
+                    <p>Premier projet du module HTML-CSS au Cnam. L'objectif pédagogique : apprendre à structurer une page en HTML et à la mettre en forme en CSS, à partir d'un contenu réel.</p>
+                    <h4>Tâche</h4>
+                    <p>Présenter mon profil professionnel sur un site de plusieurs pages, clair pour un recruteur et simple à parcourir.</p>
+                    <h4>Action</h4>
+                    <ul>
+                        <li>Tri du contenu de mon CV en trois rubriques : présentation, parcours, compétences.</li>
+                        <li>Création d'une page HTML par rubrique, avec des balises adaptées au contenu (titres, listes, sections).</li>
+                        <li>Une seule feuille de style CSS pour toutes les pages : typographie, couleurs, mise en page.</li>
+                        <li>Un menu commun pour passer facilement d'une page à l'autre.</li>
+                    </ul>
+                    <h4>Résultat</h4>
+                    <p>Un site CV de 3 pages terminé, avec une structure HTML claire et une mise en forme cohérente d'une page à l'autre.</p>
+                    <a class="lien-projet" href="projets/site-cv/index.html">Voir le site →</a>
+                </article>
+            </section>
+
+            <!-- Контакты -->
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Je recherche un stage du 1er mars au 23 avril 2027, puis une alternance en intégration web à partir de septembre 2027.</p>
+                <p><strong>E-mail :</strong> alina.kralechkina.auditeur@lecnam.net</p>
+                <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/alina-kralechkina" target="_blank">linkedin.com/in/alina-kralechkina</a></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 Alina Kralechkina · Site réalisé en HTML et CSS</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,200 @@
+/* ===== 1. Base ===== */
+* {
+    box-sizing: border-box; /* padding inclus dans la largeur */
+}
+
+body {
+    margin: 0;
+    padding: 0 16px;        /* marge sur les côtés (téléphone) */
+    background: #f6f8fc;
+    color: #18243a;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header,
+main,
+footer {
+    max-width: 1000px;      /* largeur maximale du contenu */
+    margin: 0 auto;         /* centré sur grand écran */
+}
+
+a {
+    color: #2f5d9e;
+}
+
+/* ===== 2. En-tête ===== */
+header {
+    padding: 48px 0 32px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    line-height: 1.1;
+}
+
+h1 span {
+    color: #2f5d9e;
+}
+
+.sous-titre {
+    margin: 8px 0 0;
+    font-size: 1.2rem;
+    color: #5a6780;
+}
+
+/* Menu : liens en ligne avec un espace entre eux */
+.menu {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 6px 16px;
+    border: 1px solid #2f5d9e;
+    border-radius: 20px;
+}
+
+.menu a:hover {
+    background: #2f5d9e;
+    color: #ffffff;
+}
+
+/* ===== 3. Section projets ===== */
+#projets {
+    display: grid;
+    grid-template-columns: 1fr; /* téléphone : 1 colonne */
+    gap: 24px;
+    padding-bottom: 48px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+/* ===== 4. Carte projet ===== */
+.projet {
+    background: #ffffff;
+    border: 1px solid #dbe3f0;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+/* Capture d'écran du site */
+.projet img {
+    width: 100%;            /* prend toute la largeur de la carte */
+    display: block;
+    border: 1px solid #dbe3f0;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.projet h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #2f5d9e;
+}
+
+.meta {
+    margin: 4px 0 16px;
+    font-size: 0.9rem;
+    color: #5a6780;
+}
+
+.projet h4 {
+    margin: 18px 0 4px;
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 6px;
+    background: #e6eef9;
+    color: #2f5d9e;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.projet p {
+    margin: 4px 0;
+}
+
+.projet ul {
+    margin: 4px 0;
+    padding-left: 20px;
+}
+
+.projet li {
+    margin-bottom: 4px;
+}
+
+/* Bouton "Voir le site" */
+.lien-projet {
+    display: inline-block;
+    margin-top: 18px;
+    background: #2f5d9e;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.lien-projet:hover {
+    background: #1f4478;
+}
+
+/* ===== 5. Contact ===== */
+#contact {
+    background: #ffffff;
+    border: 1px solid #dbe3f0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 32px;
+}
+
+#contact h2 {
+    margin-bottom: 10px;
+}
+
+#contact p {
+    margin: 6px 0;
+}
+
+/* ===== 6. Pied de page ===== */
+footer {
+    text-align: center;
+    color: #5a6780;
+    font-size: 0.9rem;
+    padding-bottom: 32px;
+}
+
+/* ===== 7. Ordinateur : à partir de 800px de large ===== */
+@media (min-width: 800px) {
+    body {
+        font-size: 17px;
+    }
+
+    header {
+        padding: 72px 0 40px;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    #projets {
+        grid-template-columns: 1fr 1fr; /* 2 colonnes */
+        align-items: start;
+    }
+
+    h2 {
+        grid-column: 1 / -1;            /* le titre prend toute la largeur */
+    }
+
+    .projet {
+        padding: 28px;
+    }
+}
